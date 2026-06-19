@@ -3,13 +3,13 @@
 	"id": "f3-lite",
 	"version": "${version}",
 	"name": "F3 Lite",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A fabric mod that replaces the F3 menu with a more user-friendly screen.",
 	"authors": [
-		"Me!"
+		"mesadev"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://mesadev.pages.dev",
+		"sources": "https://github.com/mesadev-esc/f3-lite"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/f3-lite/icon.png",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"dev.mesa.f3lite.F3Lite"
+		],
+		"client": [
+			"dev.mesa.f3lite.client.F3LiteClient"
 		]
 	},
 	"mixins": [
