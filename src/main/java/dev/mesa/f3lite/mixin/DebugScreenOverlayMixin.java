@@ -83,16 +83,7 @@ public abstract class DebugScreenOverlayMixin {
 
 		String dimension = this.minecraft.level.dimension().identifier().toString();
 
-		lines.add("F3 Lite");
-		lines.add("");
-		lines.add("FPS: " + Minecraft.getInstance().getFps());
-		lines.add(String.format("XYZ: %.1f / %.1f / %.1f", x, y, z));
-		lines.add("Block: " + blockPos.getX() + " " + blockPos.getY() + " " + blockPos.getZ());
-		lines.add("Chunk: " + chunkPos.x() + " " + chunkPos.z());
-		lines.add("Facing: " + this.f3lite$formatDirection(facing));
-		lines.add("Biome: " + biome);
-		lines.add("Light: " + skyLight + " sky / " + blockLight + " block");
-		lines.add("Dimension: " + dimension);
+		lines.add("F3 Lite-est");
 
 		return lines;
 	}
@@ -103,10 +94,6 @@ public abstract class DebugScreenOverlayMixin {
 		if (this.minecraft.player == null || this.minecraft.level == null) {
 			return lines;
 		}
-
-		lines.add("Java: " + System.getProperty("java.version"));
-		lines.add("Memory: " + this.f3lite$getMemoryUsage());
-		lines.add("Ping: " + this.f3lite$getPing() + "ms");
 
 		return lines;
 	}
